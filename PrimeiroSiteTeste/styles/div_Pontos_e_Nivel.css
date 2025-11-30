@@ -1,0 +1,69 @@
+
+.button_Nivel {   
+  text-align: top;;
+  height: 100px;
+  width: 350px;
+}
+
+.div_Pontos_e_Nivel {
+  background-color: rgb(31, 41, 55);
+  color: white;
+  height: 105px;
+  width: 370px;
+  border-radius: 10px;
+  display: table;
+  margin: 0 auto;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  margin-top: 25px;
+}
+
+.div_textos_Nivel {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 10px;
+}
+
+.div_Pontos {
+  text-align: center;
+  padding-top: 8px;
+  padding-left: 90px;
+}
+
+.p_Pontos {
+  color: rgb(255, 188, 18);
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.numero_Pontos {
+  font-size: 22px;
+  font-weight: 1000;
+}
+
+.div_Nivel {
+  text-align: center;
+  padding-top: 8px;
+  padding-right: 90px;
+}
+
+.p_Nivel {
+  color: rgb(18, 202, 187);
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.numero_Nivel {
+  font-size: 22px;
+  font-weight: 1000;
+}
+
+.div_BarraDeProgresso {
+  background-color: #374151;
+  height: 8px;
+  width: 340px;
+  border-radius: 50px;
+  display: table;
+  margin: 0 auto;
+  margin-top: 12px;
+}
