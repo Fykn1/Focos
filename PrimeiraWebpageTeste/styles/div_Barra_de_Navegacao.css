@@ -1,0 +1,118 @@
+.div_Fundo_Barra_de_Navegacao {  
+  background-color: rgb(17, 24, 39, 0.95);
+  height: 75px;
+  width: 100%;
+  position: fixed;
+  justify-self: center;
+  justify-items: center;
+  align-content: center;
+  bottom: 0;
+}
+
+.div_Barra_de_Navegacao {
+  background: rgb(31, 41, 55);
+  height: 63px;
+  width: 460px;
+  border-radius: 100px;
+  align-content: center;
+  justify-items: center;
+  display: grid;
+  grid-template-columns: 1fr 0.5fr 1fr;
+  padding: 0;
+}
+
+.div_Barra_de_Navegacao button{
+  height: 48px;
+  width: 145px;
+  border: none;
+  border-radius: 100px;
+  margin-top: 2px;
+  padding: 0;
+  cursor: pointer
+}
+
+.div_Barra_de_Navegacao img {
+  height: 25px;
+}
+
+.button_Prancheta {
+  background-color: rgb(18, 202, 187);
+  justify-self: end;
+  justify-items: center;
+  align-items: center;
+  display: grid;
+  grid-template-columns: 0 1fr;
+  transition: 0.3s;
+}
+
+#img_Prancheta {
+  margin-left: 145px;
+}
+
+#img_Prancheta_Hover {
+  opacity: 1;
+}
+
+.button_Calendario {
+  background-color: rgb(31, 41, 55);
+  justify-items: center;
+  align-items: center;
+  display: grid;
+  grid-template-columns: 0 1fr;
+  transition: 0.1s;
+}
+
+.button_Calendario:hover {
+  background-color: rgb(18, 202, 187, 0.0);
+}
+
+.button_Calendario:hover > #img_Calendario_Hover {
+  opacity: 1;
+}
+
+.button_Calendario:active {
+  background-color: rgb(18, 202, 187);
+  transition: none;
+
+}
+
+#img_Calendario {
+  margin-left: 145px;
+}
+
+#img_Calendario_Hover {
+  opacity: 0;
+}
+
+.button_Configuracao {
+  background-color: rgb(31, 41, 55);
+  justify-self: start;
+  justify-items: center;
+  align-items: center;
+  display: grid;
+  grid-template-columns: 0 1fr;
+  transition: 0.2s;
+}
+
+.button_Configuracao:hover {
+  background-color: rgb(18, 202, 187, 0.0);
+}
+
+.button_Configuracao:hover > #img_Configuracao_Hover {
+  opacity: 1;
+  transition: none;
+}
+
+.button_Configuracao:active {
+  background-color: rgb(18, 202, 187);
+  transition: none;
+
+}
+
+#img_Configuracao {
+  margin-left: 145px;
+}
+
+#img_Configuracao_Hover {
+  opacity: 0;
+}

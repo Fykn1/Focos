@@ -1,0 +1,90 @@
+.div_Cronometro {
+  background-color: rgb(31, 41, 55);
+  height: 190px;
+  width: 460px;
+  border-radius: 10px;
+  justify-self: center;
+  display: grid;
+  grid-template-rows: 50px 70px 50px;
+  margin-top: 15px;
+}
+
+#p_Cronometro {
+  font-size: 23px;
+  font-weight: bolder;
+  display: table;
+  margin: 0 auto;
+  padding-top: 15px;
+}
+
+#p_Tempo {
+  color:rgb(18, 202, 187);
+  font-size: 57px;
+  font-weight: bolder;
+  font-family: monospace;
+  display: table;
+  margin: 0 auto;
+}
+
+.button_Iniciar {
+  background-color: rgb(18, 202, 187);
+  height: 53px;
+  width: 430px;
+  border-radius: 10px;
+  border: none;
+  display: table;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 0 0 0 1fr;
+  padding: 0;
+  cursor: pointer;
+}
+
+.button_Iniciar:hover {
+  background-color:rgb(18, 202, 187, 0.7);
+}
+
+.button_Iniciar:active {
+  background-color: rgb(215, 38, 38, 0.8);
+}
+
+.button_Iniciar:active > #img_Play, .button_Iniciar:active > #p_Iniciar {
+  opacity: 0;
+}
+
+.button_Iniciar:active > #img_Pause, .button_Iniciar:active > #p_Pausar {
+  opacity: 1;
+}
+
+#img_Play {
+  height: 27px;
+  opacity: 1;
+  padding-top: 13.4px;
+  padding-left: 165px;
+}
+
+#img_Pause {
+  height: 27px;
+  opacity: 0;
+  padding-top: 13.4px;
+  padding-left: 160px;
+}
+
+#p_Iniciar {
+  height: 25px;
+  font-size: 23px;
+  font-weight: bold;
+  opacity: 1;
+  padding-top: 14.7px;
+  padding-left: 197px;
+}
+
+#p_Pausar {
+  height: 25px;
+  font-size: 23px;
+  font-weight: bold;
+  opacity: 0;
+  text-align: right;
+  padding-top: 14.7px;
+  padding-right: 160px;
+}

@@ -1,6 +1,5 @@
 .div_Tarefas {
   background-color: rgb(31, 41, 55);
-  color: white;
   height: auto;
   width: 460px;
   border-radius: 10px;
@@ -8,28 +7,71 @@
   margin: 0 auto;
   display: grid;
   grid-template-rows: auto;
-  margin-top: 35px;
+  padding-top: 10px;
+  padding-bottom: 22px;
+  margin-top: 15px;
 }
 
-.button_Tarefas button {
+.button_Tarefas {
   background-color: rgb(55, 65, 81);
   color: white;
-  height: 45px;
-  width: 430px;
-  font-size: 17px;
+  height: 49px;
+  width: 90%;
+  font-size: 14.8px;
   font-weight: lighter;
   text-align: left;
   border: none;
   border-radius: 8px;
-  display: table;
-  margin: 0 auto;
-  margin-top: 10px;
+  justify-self: center;
+  display: grid;
+  grid-template-columns: 0 20px 345px 20px;
+  margin-top: 12px;
+  cursor: pointer;
 }
 
-#p_Tarefa1 {
-  margin-top: 25px;
+.button_Tarefas:hover {
+  background-color: rgb(151, 158, 171, 0.5);
 }
 
-#p_Tarefa5 {
-  margin-bottom: 25px;
+.button_Tarefas:active, .button_Tarefas:active > #p_MaisPontos {
+  background-color: rgb(26, 71, 53);
+  color:rgb(255,188, 18, 0);
+}
+
+.button_Tarefas:active > #img_Checkbutton {
+  opacity: 1;
+}
+
+.button_Tarefas:active > #p_Tarefas{
+  color: rgb(151, 158, 171);
+  text-decoration: line-through;
+  text-decoration-thickness: 1.5px;
+}
+
+#img_Checkbutton_Borda {
+  height: 25px;
+  padding-top: 10px;
+  padding-left: 10px; 
+}
+
+#img_Checkbutton {
+  height: 26.4px;
+  opacity: 0;
+  padding-top: 9.45px;
+  padding-left: 9.43px; 
+}
+
+#p_Tarefas {
+  width: 364px;
+  font-size: 15px;
+  padding-top: 15px;
+  padding-left: 25px;
+}
+
+#p_MaisPontos {
+  color: rgb(255,188, 18);
+  font-size: 15px;
+  font-weight: 750;
+  padding-top: 16px;
+  margin: 0;
 }
