@@ -3,9 +3,9 @@
   height: 105px;
   width: 370px;
   border-radius: 10px;
-  justify-self: center;
   display: grid;
   grid-template-rows: 60px 1px 44px;
+  margin: 0 auto;
   margin-top: 25px;
 }
 
@@ -21,13 +21,13 @@
   padding-left: 90px;
 }
 
-#p_Pontos {
+.p_Pontos {
   color: rgb(255, 188, 18);
   font-size: 15px;
   font-weight: bold;
 }
 
-#numero_Pontos {
+.numero_Pontos {
   font-size: 22px;
   font-weight: 1000;
 }
@@ -38,25 +38,23 @@
   padding-right: 90px;
 }
 
-#p_Nivel {
+.p_Nivel {
   color: rgb(18, 202, 187);
   font-size: 15px;
   font-weight: bold;
 }
 
-#numero_Nivel {
+.numero_Nivel {
   font-size: 22px;
   font-weight: 1000;
 }
 
-#p_Exp {
-  height: 0px;
-  font-size: 0px;
-  text-align: center;
-  margin-top: 5px;
+.p_Exp {
+  height: 0;
+  font-size: 0;
 }
 
-#div_BarraDeExp {
+.div_BarraDeExp {
   background-color: rgb(55, 65, 81);
   height: 8px;
   width: 340px;
@@ -67,6 +65,6 @@
   margin-top: 12px;
 }
 
-#div_BarraDeExp:hover ~ #p_Exp {
+.div_BarraDeExp:hover > .p_Exp {
   font-size: 12px;
 }

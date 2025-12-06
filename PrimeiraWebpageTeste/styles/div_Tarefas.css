@@ -3,12 +3,11 @@
   height: auto;
   width: 460px;
   border-radius: 10px;
-  display: table;
-  margin: 0 auto;
   display: grid;
   grid-template-rows: auto;
   padding-top: 10px;
   padding-bottom: 22px;
+  margin: 0 auto;
   margin-top: 15px;
 }
 
@@ -22,9 +21,9 @@
   text-align: left;
   border: none;
   border-radius: 8px;
-  justify-self: center;
   display: grid;
   grid-template-columns: 0 20px 345px 20px;
+  margin: 0 auto;
   margin-top: 12px;
   cursor: pointer;
 }
@@ -33,45 +32,57 @@
   background-color: rgb(151, 158, 171, 0.5);
 }
 
-.button_Tarefas:active, .button_Tarefas:active > #p_MaisPontos {
-  background-color: rgb(26, 71, 53);
-  color:rgb(255,188, 18, 0);
+.button_Tarefa_Concluida1, .button_Tarefa_Concluida2, .button_Tarefa_Concluida3,
+.button_Tarefa_Concluida4, .button_Tarefa_Concluida5 {
+  background-color: rgb(4, 81, 50);
 }
 
-.button_Tarefas:active > #img_Checkbutton {
-  opacity: 1;
+.button_Tarefa_Concluida1:hover, .button_Tarefa_Concluida2:hover, .button_Tarefa_Concluida3:hover, 
+.button_Tarefa_Concluida4:hover, .button_Tarefa_Concluida5:hover {
+  background-color: rgba(15, 151, 97, 0.621);
 }
 
-.button_Tarefas:active > #p_Tarefas{
-  color: rgb(151, 158, 171);
-  text-decoration: line-through;
-  text-decoration-thickness: 1.5px;
-}
-
-#img_Checkbutton_Borda {
+.img_Checkbutton_Borda {
   height: 25px;
   padding-top: 10px;
   padding-left: 10px; 
 }
 
-#img_Checkbutton {
+.img_Checkbutton {
   height: 26.4px;
   opacity: 0;
   padding-top: 9.45px;
   padding-left: 9.43px; 
 }
 
-#p_Tarefas {
+.img_Checkbutton_Concluida1, .img_Checkbutton_Concluida2, .img_Checkbutton_Concluida3, 
+.img_Checkbutton_Concluida4, .img_Checkbutton_Concluida5 {
+  opacity: 1;
+}
+
+.p_Tarefas {
   width: 364px;
   font-size: 15px;
   padding-top: 15px;
   padding-left: 25px;
 }
 
-#p_MaisPontos {
+.p_Tarefa_Concluida1, .p_Tarefa_Concluida2, .p_Tarefa_Concluida3,
+.p_Tarefa_Concluida4, .p_Tarefa_Concluida5 {
+  color: rgb(151, 158, 171);
+  text-decoration: line-through;
+  text-decoration-thickness: 1.5px;
+}
+
+.p_MaisPontos {
   color: rgb(255,188, 18);
   font-size: 15px;
   font-weight: 750;
   padding-top: 16px;
   margin: 0;
+}
+
+.p_MaisPontos_Concluida1, .p_MaisPontos_Concluida2, .p_MaisPontos_Concluida3, 
+.p_MaisPontos_Concluida4, .p_MaisPontos_Concluida5 {
+  opacity: 0;
 }

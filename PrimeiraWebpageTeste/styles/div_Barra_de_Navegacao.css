@@ -1,11 +1,13 @@
 .div_Fundo_Barra_de_Navegacao {  
   background-color: rgb(17, 24, 39, 0.95);
   height: 75px;
-  width: 100%;
+  width: 473px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
   position: fixed;
-  justify-self: center;
   justify-items: center;
   align-content: center;
+  left: 34.5%;
   bottom: 0;
 }
 
@@ -14,11 +16,12 @@
   height: 63px;
   width: 460px;
   border-radius: 100px;
-  align-content: center;
   justify-items: center;
+  align-content: center;
   display: grid;
   grid-template-columns: 1fr 0.5fr 1fr;
   padding: 0;
+  margin: 0 auto;
 }
 
 .div_Barra_de_Navegacao button{
@@ -31,12 +34,8 @@
   cursor: pointer
 }
 
-.div_Barra_de_Navegacao img {
-  height: 25px;
-}
-
 .button_Prancheta {
-  background-color: rgb(18, 202, 187);
+  background-color: rgb(18, 202, 187, 0.85);
   justify-self: end;
   justify-items: center;
   align-items: center;
@@ -45,11 +44,15 @@
   transition: 0.3s;
 }
 
-#img_Prancheta {
+.img_Prancheta {
+  height: 29px;
+  margin-top: 5px;
   margin-left: 145px;
 }
 
-#img_Prancheta_Hover {
+.img_Prancheta_Hover {
+  height: 29px;
+  margin-top: 5px;;
   opacity: 1;
 }
 
@@ -59,28 +62,27 @@
   align-items: center;
   display: grid;
   grid-template-columns: 0 1fr;
-  transition: 0.1s;
 }
 
 .button_Calendario:hover {
   background-color: rgb(18, 202, 187, 0.0);
 }
 
-.button_Calendario:hover > #img_Calendario_Hover {
+.button_Calendario:hover > .img_Calendario_Hover {
   opacity: 1;
 }
 
 .button_Calendario:active {
-  background-color: rgb(18, 202, 187);
-  transition: none;
-
+  background-color: rgb(18, 202, 187, 0.85);
 }
 
-#img_Calendario {
+.img_Calendario {
+  height: 31px;
   margin-left: 145px;
 }
 
-#img_Calendario_Hover {
+.img_Calendario_Hover {
+  height: 31px;  
   opacity: 0;
 }
 
@@ -91,28 +93,28 @@
   align-items: center;
   display: grid;
   grid-template-columns: 0 1fr;
-  transition: 0.2s;
 }
 
 .button_Configuracao:hover {
   background-color: rgb(18, 202, 187, 0.0);
 }
 
-.button_Configuracao:hover > #img_Configuracao_Hover {
+.button_Configuracao:hover > .img_Configuracao_Hover {
   opacity: 1;
-  transition: none;
 }
 
 .button_Configuracao:active {
-  background-color: rgb(18, 202, 187);
+  background-color: rgb(18, 202, 187, 0.85);
   transition: none;
 
 }
 
-#img_Configuracao {
+.img_Configuracao {
+  height: 27px;
   margin-left: 145px;
 }
 
-#img_Configuracao_Hover {
+.img_Configuracao_Hover {
+  height: 27px;  
   opacity: 0;
 }
