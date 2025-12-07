@@ -22,7 +22,7 @@
   border: none;
   border-radius: 8px;
   display: grid;
-  grid-template-columns: 0 20px 345px 20px;
+  grid-template-columns: 0 20px 345px 30px;
   margin: 0 auto;
   margin-top: 12px;
   cursor: pointer;
@@ -78,8 +78,9 @@
   color: rgb(255,188, 18);
   font-size: 15px;
   font-weight: 750;
+  text-align: center;
   padding-top: 16px;
-  margin: 0;
+  margin: 0 auto;
 }
 
 .p_MaisPontos_Concluida1, .p_MaisPontos_Concluida2, .p_MaisPontos_Concluida3, 

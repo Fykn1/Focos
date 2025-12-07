@@ -4,7 +4,7 @@
   width: 460px;
   border-radius: 10px;
   display: grid;
-  grid-template-rows: 3.5fr 1fr 2fr;
+  grid-template-rows: 61.91px 18px 35.39px;
   margin: 0 auto;
   margin-top: 35px;
 }
@@ -34,12 +34,17 @@
 
 .div_BarraDeProgresso {
   background-color: rgb(55, 65, 81);
-  height: 12px;
+  height: 14px;
   width: 420px;
   border-radius: 10px;
-  align-self: center;
   margin-left: 20px;
-  margin-bottom: 0;
+}
+
+.div_Porcentagem {
+  background: linear-gradient(to right, rgb(241, 161, 16), rgb(86, 204, 88), rgb(22, 101, 52));
+  height: 14px;
+  width: 0;
+  border-radius: 10px;
 }
 
 .p_Progresso {

@@ -17,7 +17,7 @@
       <h1 class="Titulo">Foco Total nos Estudos</h1>
       <h2 class="SemiTitulo">Se falhar é <strong>burro</strong>.</h2>
     </div>
-    
+
     <div class="div_Fundo_Barra_de_Navegacao">
       <div class="div_Barra_de_Navegacao">
         <button class="button_Prancheta">
@@ -35,7 +35,7 @@
       </div>
     </div>
 
-    <div>
+    <div class="pagina_Tarefas">
       <div class="div_Pontos_e_Nivel">
         <div class="div_p_Pontos_e_Nivel">
           <div class="div_Pontos">
@@ -57,7 +57,9 @@
           <p class="p_Desafios_de_Hoje">Desafios de Hoje</p>
           <p class="p_Datas">sexta-feira, 28 de novembro</p>
         </div>
-        <div class="div_BarraDeProgresso"></div>
+        <div class="div_BarraDeProgresso"> 
+          <div class="div_Porcentagem js-div_Porcentagem"></div>
+        </div>
         <p class="p_Progresso">0% Concluído</p>
       </div>
 
@@ -96,16 +98,25 @@
 
       <div class="div_Cronometro">
         <p class="p_Cronometro">Cronômetro</p>
-        <p class="p_Tempo">00:00:00</p>
-        <button class="button_Iniciar">
-          <img class="img_Play" src="Imagens/Play_Branco.png">
-          <img class="img_Pause" src="Imagens/Pause_Branco.png">
-          <p class="p_Iniciar">Iniciar</p>
-          <p class="p_Pausar">Pausar</p>
+        <p class="p_Tempo js-p_Tempo">00:00:00</p>
+        <button class="button_Iniciar js-button_Iniciar" onclick="cronometrar_div_Cronometro()">
+          <img class="img_Play js-img_Play" src="Imagens/Play_Branco.png">
+          <img class="img_Pause js-img_Pause" src="Imagens/Pause_Branco.png">
+          <p class="p_Play js-p_Play">Iniciar</p>
         </button>
       </div>
     </div>
 
+    <script>
+      function muda_div_Porcentagem() {
+        let barra = document.querySelector('.js-div_Porcentagem');
+        console.log(barra);
+
+        barra.style.width = "100%";
+      }
+    </script>
+
     <script src="scripts/js-div_Tarefas.js"></script>
+    <script src="scripts/js-div_Cronometro.js"></script>
   </body>
 </html>

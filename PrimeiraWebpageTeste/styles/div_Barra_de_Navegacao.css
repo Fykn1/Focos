@@ -7,14 +7,15 @@
   position: fixed;
   justify-items: center;
   align-content: center;
-  left: 34.5%;
   bottom: 0;
+  left: 50%;
+  margin-left: -236.5px;
 }
 
 .div_Barra_de_Navegacao {
   background: rgb(31, 41, 55);
   height: 63px;
-  width: 460px;
+  width: 462px;
   border-radius: 100px;
   justify-items: center;
   align-content: center;

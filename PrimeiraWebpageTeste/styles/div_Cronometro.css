@@ -3,7 +3,7 @@
   height: 190px;
   width: 460px;
   border-radius: 10px;
-  display: grid;
+  disPlay: grid;
   grid-template-rows: 50px 70px 50px;
   margin: 0 auto;
   margin-top: 15px;
@@ -25,13 +25,13 @@
 }
 
 .button_Iniciar {
-  background-color: rgb(18, 202, 187);
+  background-color: rgb(18, 202, 187, 0.9);
   height: 53px;
   width: 430px;
   border-radius: 10px;
   border: none;
   display: grid;
-  grid-template-columns: 0 0 0 1fr;
+  grid-template-columns: 0 0 1fr;
   padding: 0;
   margin: 0 auto;
   cursor: pointer;
@@ -41,47 +41,35 @@
   background-color:rgb(18, 202, 187, 0.7);
 }
 
-.button_Iniciar:active {
-  background-color: rgb(215, 38, 38, 0.8);
+.button_Pausar {
+  background-color: rgb(215, 38, 38);
 }
 
-.button_Iniciar:active > .img_Play, .button_Iniciar:active > .p_Iniciar {
-  opacity: 0;
-}
-
-.button_Iniciar:active > .img_Pause, .button_Iniciar:active > .p_Pausar {
-  opacity: 1;
+.button_Pausar:hover {
+  background-color: rgb(215, 38, 38, 0.8)
 }
 
 .img_Play {
   height: 27px;
   opacity: 1;
-  padding-top: 13.4px;
-  padding-left: 165px;
+  padding-top: 13.3px;
+  padding-left: 162.62px;
 }
 
 .img_Pause {
   height: 27px;
   opacity: 0;
-  padding-top: 13.4px;
-  padding-left: 160px;
+  padding-top: 13.3px;
+  padding-left: 158.14px;
 }
 
-.p_Iniciar {
+.p_Play {
   height: 25px;
+  width: auto;
   font-size: 23px;
   font-weight: bold;
+  justify-self: end;
   opacity: 1;
   padding-top: 14.7px;
-  padding-left: 197px;
-}
-
-.p_Pausar {
-  height: 25px;
-  font-size: 23px;
-  font-weight: bold;
-  opacity: 0;
-  text-align: right;
-  padding-top: 14.7px;
-  padding-right: 160px;
+  padding-right: 162.62px;
 }
