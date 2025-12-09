@@ -3,14 +3,20 @@ function cronometrar_div_Cronometro() {
   cronometro_p_Tempo();
 }
 
-function Cronometra() {
-  const p_Tempo = document.querySelector('.js-p_Tempo').innerHTML.replaceAll(':', '');
-  let muda_Tempo = document.querySelector('.js-p_Tempo');
-  
-  let h = Number(p_Tempo.slice(0, 2));
-  let m = Number(p_Tempo.slice(2, 4));
-  let s = Number(p_Tempo.slice(4));
+function reseta() {
+  document.querySelector('.js-p_Tempo').innerHTML = '00:00:00'
+  localStorage.removeItem('Tempo');
+}
 
+document.querySelector('.js-p_Tempo').innerHTML = localStorage.getItem('Tempo') || '00:00:00';
+
+function Cronometra() {
+  let p_Tempo = document.querySelector('.js-p_Tempo');
+
+  let h = Number(p_Tempo.innerHTML.slice(0, 2));
+  let m = Number(p_Tempo.innerHTML.slice(3, 5));
+  let s = Number(p_Tempo.innerHTML.slice(6));
+  
   if (s < 59) {
   s += 1;
 
@@ -42,14 +48,15 @@ function Cronometra() {
     s = String(s);
   }
 
-  muda_Tempo.innerHTML = `${h}:${m}:${s}`;
-}
+  p_Tempo.innerHTML = `${h}:${m}:${s}`;
+  localStorage.setItem('Tempo', p_Tempo.innerHTML);
+} 
 
 function cronometro_p_Tempo() {
   const p_Tempo = Number(document.querySelector('.js-p_Tempo').innerHTML.replaceAll(':', ''));
   const p_Play = document.querySelector('.js-p_Play').innerHTML;
 
-  if (p_Tempo != 0 && p_Play === 'Continuar') {
+  if (p_Play === 'Continuar') {
     clearInterval(id);
     return;
   
