@@ -1,26 +1,36 @@
-function concluir_div_Tarefas(N) {
-  concluir_button_Tarefas(N);
-  concluir_img_Checkbutton(N);
-  concluir_p_Tarefas(N);
-  concluir_p_MaisPontos(N);
+function concluir_Tarefas(N) {
+  const button_Tarefas = document.querySelector('.js-button_Tarefa' + N);
+  const img_Checkbutton = document.querySelector('.js-img_Checkbutton' + N);
+  const p_Tarefas = document.querySelector('.js-p_Tarefas' + N);
+  const p_MaisPontos = document.querySelector('.js-p_MaisPontos' + N);
+
+  button_Tarefas.classList.toggle('Concluida');
+
+  if (!button_Tarefas.classList[2]) {
+    button_Tarefas.style.backgroundColor = "rgb(55, 65, 81)";
+    img_Checkbutton.style.opacity = "0";
+    p_Tarefas.style.color = "white";
+    p_Tarefas.style.textDecoration = "none";
+    p_MaisPontos.style.opacity = "1";
+  
+  } else {
+    button_Tarefas.style.backgroundColor = "rgb(4, 81, 50)";
+    img_Checkbutton.style.opacity = "1";
+    p_Tarefas.style.color = "rgb(151, 158, 171)";
+    p_Tarefas.style.textDecoration = "line-through";
+    p_Tarefas.style.textDecorationThickness = "1.5px";
+    p_MaisPontos.style.opacity = "0";
+  }
 }
 
-function concluir_img_Checkbutton(N) {
-  const img_Checkbutton_Concluida = document.querySelector('.js-img_Checkbutton' + N);
-  img_Checkbutton_Concluida.classList.toggle('img_Checkbutton_Concluida' + N);
-}
-
-function concluir_button_Tarefas(N) {
-  const button_Tarefa_Concluida = document.querySelector('.js-button_Tarefa' + N);
-  button_Tarefa_Concluida.classList.toggle('button_Tarefa_Concluida' + N);
-}
-
-function concluir_p_Tarefas(N) {
-  const p_Tarefa_Concluida = document.querySelector('.js-p_Tarefas' + N);
-  p_Tarefa_Concluida.classList.toggle('p_Tarefa_Concluida' + N);
-}
-
-function concluir_p_MaisPontos(N) {
-  const p_MaisPontos_Concluida = document.querySelector('.js-p_MaisPontos' + N);
-  p_MaisPontos_Concluida.classList.toggle('p_MaisPontos_Concluida' + N);
+function add() {
+  let adiciona = document.querySelector('.js-add');
+  console.log(adiciona);
+  adiciona.innerHTML += 
+    `<button class="button_Tarefas js-button_Tarefas" onclick="concluir_Tarefas()">
+      <img class="img_Checkbutton_Borda" src="Imagens/Checkbutton_Borda.png">
+      <img class="img_Checkbutton js-img_Checkbutton" src="Imagens/Checkbutton.png">
+      <p class="p_Tarefas js-p_Tarefas">${undefined}</p>
+      <p class="p_MaisPontos js-p_MaisPontos">${undefined}</p>
+    </button>`;
 }
