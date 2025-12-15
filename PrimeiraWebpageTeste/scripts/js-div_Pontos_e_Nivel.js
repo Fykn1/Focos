@@ -1,5 +1,10 @@
+document.querySelector('.js-numero_Pontos').innerHTML = localStorage.getItem('Pontos_Total') || 0;
+document.querySelector('.js-numero_Nivel').innerHTML = localStorage.getItem('Nivel') || 1;
+document.querySelector('.js-div_BarraDeExp_Concluido').style.width = `${localStorage.getItem('Width')}%` || '0px';
+
 let Pontos_Total = Number(document.querySelector('.js-numero_Pontos').innerHTML);
-let Width = 0;
+let Nivel = document.querySelector('.js-numero_Nivel');
+let Width = Number(localStorage.getItem('Width'));
 
 function mudar_div_Pontos_e_Nivel(N) {
   aumenta_Pontos(N);
@@ -22,20 +27,21 @@ function aumenta_Pontos(N) {
   }
 
   numero_Pontos.innerHTML = Pontos_Total;
+  localStorage.setItem('Pontos_Total', Pontos_Total);
 }
 
-function aumenta_Nivel() {  
-  let Nivel = document.querySelector('.js-numero_Nivel');
-
+function aumenta_Nivel() {
   if (Pontos_Total < 50) {
     Nivel.innerHTML = 1;
-  
+
   } else if (Pontos_Total < 100) {
     Nivel.innerHTML = 2;
   
   } else {
     Nivel.innerHTML = 3;
   }
+
+  localStorage.setItem('Nivel', Nivel.innerHTML);
 }
 
 function atualiza_Barra() {
@@ -61,4 +67,16 @@ function atualiza_Barra() {
     Width += -100;
     setTimeout(() => { BarraDeExp.style.width = `${Width}%`; }, 350);
   }
+
+  localStorage.setItem('Width', Width);
+}
+
+function reset() {
+  localStorage.removeItem('Pontos_Total');
+  localStorage.removeItem('Nivel');
+  localStorage.removeItem('Width');
+
+  Pontos_Total = 0;
+  Nivel = 0;
+  Width = 0;
 }
